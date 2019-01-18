@@ -15,7 +15,7 @@ var postdate = entry.published.$t;var cdyear = postdate.substring(0,4);var cdmon
 
 if(showpostthumbnails==true) 
 document.write('<a href="'+posturl+'" target ="_top"><img class="recent_thumb" src="'+thumburl+'"/></a>');
-document.write('<b><a href="'+posturl+'" target ="_top">'+posttitle+'</a></b><br>');
+document.write('<b><a class="titleimgrp" href="'+posturl+'" target ="_top">'+posttitle+'</a></b><br>');
 
     if ("content" in entry) {
       var postcontent = entry.content.$t;}
