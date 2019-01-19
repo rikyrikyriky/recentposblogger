@@ -15,7 +15,7 @@ var postdate = entry.published.$t;var cdyear = postdate.substring(0,4);var cdmon
 
 if(showpostthumbnails==true) 
 document.write('<a class="yaiyyy" href="'+posturl+'" target ="_top"><img class="recent_thumb" src="'+thumburl+'"/></a>');
-document.write('<b><a class="titleimgrp" href="'+posturl+'" target ="_top">'+posttitle+'</a></b><br>');
+document.write('<b><a class="titleimgrp" href="'+posturl+'" target ="_top">'+posttitle+'</a></b>');
 
     if ("content" in entry) {
       var postcontent = entry.content.$t;}
@@ -43,7 +43,7 @@ if (showpostsummary == true) {
 }
 
 var towrite='';var flag=0;
-document.write('<br><strong>');
+document.write('<strong>');
 
 if(showpostdate==true) {towrite=towrite+monthnames[parseInt(cdmonth,10)]+'-'+cdday+' - '+cdyear;flag=1;}
 
